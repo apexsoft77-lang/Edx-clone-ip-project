@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.edx.org/trademark-logos/edx-logo-elm.svg"
+      type="image/x-icon"
+    />
+    <title>edX Clone</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/testimony.css" />
+    <link rel="stylesheet" href="assets/css/popular-course.css" />
+    <link rel="stylesheet" href="assets/css/four-card.css" />
+    <link rel="stylesheet" href="assets/css/skill-grow.css" />
+    <link rel="stylesheet" href="assets/css/horizontal.css" />
+    <link rel="stylesheet" href="assets/css/trend.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/partner.css" />
+  </head>
+
+  <body>
+    <!-- ---------------------------
+        HEADER
+    -------------------------- -->
+    <header>
+      <!-- MOBILE MENU BUTTON -->
+      <div class="menu-btn" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="#"
+          ><img
+            src="https://www.edx.org/trademark-logos/edx-logo-elm.svg"
+            alt="Logo"
+        /></a>
+      </div>
+
+      <!-- DESKTOP LEARN BUTTON (after logo) -->
+      <div class="desktop-learn">
+        Learn <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+      <!-- MOBILE SEARCH ICON -->
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <!-- DESKTOP SEARCH BAR -->
+      <div class="search-bar">
+        <input type="text" placeholder="What do you want to learn?" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="desktop-nav">
+        <a href="#">edX For Business</a>
+        <a href="#">Sign In</a>
+        <a href="#" class="register-btn">Register for free</a>
+      </nav>
+    </header>
+
+    <!-- ---------------------------
+        MOBILE SLIDE-IN MENU
+      ---------------------------- -->
+    <div class="side-menu" id="sideMenu">
+      <div class="close-btn" onclick="closeMenu()">✕</div>
+
+      <div class="sign-in">Sign In</div>
+      <div class="register-btn">Register for free</div>
+
+      <ul>
+        <li>Browse by topic</li>
+        <li>edX For Business</li>
+      </ul>
+    </div>
+
+    <!-- ---------------------------
+        HERO SECTION
+    -------------------------- -->
+    <div class="hero-section">
+      <section class="hero">
+        <h1>Generative AI<br />Fundamentals</h1>
+        <p>Unlock and leverage the potential of generative AI.</p>
+
+        <div class="btn-row">
+          <button class="btn-primary">
+            <i class="fa-solid fa-layer-group"></i> Explore offerings
+          </button>
+          <button class="btn-outline">
+            <i class="fa-solid fa-circle-info"></i> Learn more
+          </button>
+        </div>
+      </section>
+
+      <section class="courses">
+        <div class="course-card course-card-1">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <span class="badge">Professional Certificate</span>
+            <h3>Prompt Engineering Basics</h3>
+            <div class="course-footer">20 Courses</div>
+          </div>
+        </div>
+
+        <div class="course-card course-card-1">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <span class="badge">MicroMasters Program</span>
+            <h3>Generative AI on the Business</h3>
+            <div class="course-footer">12 Courses</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ------------------
+    PARTNER SECTION
+ ------------------- -->
+    <section class="partners">
+      <div class="partner-track">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+          alt="Google Cloud"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+          alt="Google Cloud"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+          alt="Google Cloud"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+          alt="Google Cloud"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+          alt="Google Cloud"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg"
+          alt="Google Cloud"
+        />
+      </div>
+    </section>
+
+    <!-- -----------------------
+       TRENDING EDX
+ ------------------------ -->
+
+    <div class="container">
+      <h1>Trending on edX</h1>
+
+      <!-- CATEGORY FILTERS -->
+      <div class="filters">
+        <button class="filter active">All</button>
+        <button class="filter">AI & Digital Transformation</button>
+        <button class="filter">Business Management & Strategy</button>
+        <button class="filter">Data Science & Analysis</button>
+        <button class="filter">Sustainability</button>
+      </div>
+
+      <!-- CARDS SECTION -->
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?semt=ais_hybrid&w=740&q=80"
+          />
+          <h3>Mobile App Development with Flutter</h3>
+          <p>IBM</p>
+          <span class="tag">Executive Education</span>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkUFmp5jSF-DhrD5102bzHU7RbidetfqYfA&s"
+          />
+          <h3>Artificial Intelligence Programme</h3>
+          <p>Oxford Said</p>
+          <span class="tag">Executive Education</span>
+        </div>
+
+        <div class="card">
+          <img src="https://miro.medium.com/0*ARCVgw1aDJ0vWXKM.jpeg" />
+          <h3>Introduction to Web Development (HTML, CSS, JS)</h3>
+          <p>IBM</p>
+          <span class="tag">Executive Education</span>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://kidztech.edubeta.net.ng/wp-content/uploads/2024/04/kidz-tech-learn-python-programming.webp"
+          />
+          <h3>Python Programming Fundamentals</h3>
+          <p>IBM</p>
+          <span class="tag">Executive Education</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------
+       HORIIZONATL CAR
+ ----------------------------- -->
+    <div class="learning-path">
+      <div class="left">
+        <h2>✨ Find your learning path</h2>
+        <p>
+          Answer a few questions to get personalized recommendations on what
+          learning path is best for you.
+        </p>
+
+        <button class="start-btn">Get Started</button>
+      </div>
+
+      <div class="right">
+        <img
+          src="https://www.edx.org/_next/image?url=https%3A%2F%2Fimages.cdn.edx.org%2Fattachment-225044b5951fd9dcf1a878bdbd8d96bba01b5d8eee25f.jpg&w=1080&q=75"
+          alt="Person Holding Phone"
+        />
+      </div>
+    </div>
+
+    <!-- -----------------
+      FOUR CARD 
+ ------------------------>
+
+    <div class="learning-format">
+      <h1>Find your perfect learning format</h1>
+      <p class="subtext">
+        edX offers many ways to learn and grow your skills. Choose the format
+        that works best for you.
+      </p>
+
+      <div class="cards">
+        <!-- CARD 1 -->
+        <div class="card">
+          <div class="card-top beige">
+            <i class="fa-solid fa-book-open"></i>
+            <h3>Individual courses</h3>
+            <p>Learn a new skill anywhere, anytime.</p>
+          </div>
+
+          <ul class="details">
+            <li><i class="fa-regular fa-clock"></i> 2–6 weeks</li>
+            <li>
+              <i class="fa-regular fa-id-card"></i> Earn a verified certificate
+            </li>
+            <li><i class="fa-solid fa-chart-line"></i> Upskill quickly</li>
+          </ul>
+
+          <button class="explore-btn">Explore courses</button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <div class="card-top beige">
+            <i class="fa-solid fa-display"></i>
+            <h3>Certificate programs</h3>
+            <p>Combine multiple courses into a well-rounded program.</p>
+          </div>
+
+          <ul class="details">
+            <li><i class="fa-regular fa-clock"></i> 8–12 weeks</li>
+            <li>
+              <i class="fa-regular fa-id-card"></i> Earn multiple certificates
+            </li>
+            <li>
+              <i class="fa-solid fa-chart-line"></i> Upskill on a deeper level
+            </li>
+          </ul>
+
+          <button class="explore-btn">Explore programs</button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <div class="card-top blue">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Executive Education</h3>
+            <p>Deepen your expertise with classes designed by experts.</p>
+          </div>
+
+          <ul class="details">
+            <li><i class="fa-regular fa-clock"></i> 6–20+ weeks</li>
+            <li><i class="fa-regular fa-id-card"></i> Earn credentials</li>
+            <li>
+              <i class="fa-solid fa-chart-line"></i> Grow career-critical skills
+            </li>
+          </ul>
+
+          <button class="explore-btn">Explore Executive</button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+          <div class="card-top blue">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Online degrees</h3>
+            <p>Earn your degree from a prestigious university.</p>
+          </div>
+
+          <ul class="details">
+            <li><i class="fa-regular fa-clock"></i> 1.5–3 years</li>
+            <li><i class="fa-solid fa-award"></i> Earn a degree</li>
+            <li><i class="fa-solid fa-chart-line"></i> Become an expert</li>
+          </ul>
+
+          <button class="explore-btn">Explore degrees</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------
+   SKILL AND CARRER GGROW
+ ------------------- -->
+    <section class="stats-section">
+      <h2>Learn something new with edX</h2>
+      <p class="subtitle">
+        edX helps learners around the world grow their skills and careers. Join
+        our learning community today!
+      </p>
+
+      <div class="stats-container">
+        <div class="stat">
+          <h3>86M</h3>
+          <p>
+            global learners, in nearly every industry, are upskilling with edX.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stat">
+          <h3>84%</h3>
+          <p>
+            of edX learners have seen professional growth after earning a
+            certificate.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stat">
+          <h3>140K</h3>
+          <p>
+            professionals have had their lives changed through Executive
+            Education.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stat">
+          <h3>42K</h3>
+          <p>edX learners have already found their degree program this year.</p>
+        </div>
+      </div>
+
+      <a href="#" class="explore">Explore courses and degrees today</a>
+    </section>
+
+    <!-- ----------------------
+       TESTIMONY
+ -------------------- -->
+    <div class="testimony-title">
+      <h1>Hear what other learners have to say</h1>
+    </div>
+    <div class="cards-container">
+      <div class="cords">
+        <p class="quote">❝</p>
+        <p class="text">
+          I'm a fan of edX's new way of learning. Thousands of people can study
+          from anywhere in the world. It's inspiring!
+        </p>
+        <div class="profile">
+          <img
+            src="https://www.edx.org/_next/image?url=https%3A%2F%2Fimages.cdn.edx.org%2Fattachment-21774ulysse-toussaint.jpg&w=256&q=75"
+            alt=""
+          />
+          <div>
+            <h4>Sarah Riggott</h4>
+            <small>Guatemala</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="cords">
+        <p class="quote">❝</p>
+        <p class="text">
+          I believe that poor kids can learn too, but how many actually have the
+          opportunity? edX is creating a real chance.
+        </p>
+        <div class="profile">
+          <img
+            src="https://www.edx.org/_next/image?url=https%3A%2F%2Fimages.cdn.edx.org%2Fattachment-21774ulysse-toussaint.jpg&w=256&q=75"
+            alt=""
+          />
+          <div>
+            <h4>Ulysse Toussaint</h4>
+            <small>Pennsylvania</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="cords">
+        <p class="quote">❝</p>
+        <p class="text">
+          I'm hard of hearing, which makes it difficult to follow regular
+          courses. Thanks to edX, learning is accessible.
+        </p>
+        <div class="profile">
+          <img
+            src="https://www.edx.org/_next/image?url=https%3A%2F%2Fimages.cdn.edx.org%2Fattachment-21774ulysse-toussaint.jpg&w=256&q=75"
+            alt=""
+          />
+          <div>
+            <h4>Sandy Van den Borne</h4>
+            <small>Belgium</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------
+       HORIIZONATL CAR
+ ----------------------------- -->
+    <div class="learning-path">
+      <div class="left">
+        <h2>Empower every member of your team</h2>
+        <p>
+          Discover edX Enterprise Subscriptions Give your employees unlimited
+          access to courses and certificate programs in topics like AI,
+          sustainability, and leadership.
+        </p>
+
+        <button class="start-btn">Discover interprise solution</button>
+      </div>
+
+      <div class="right">
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- -------------------
+     POPULAR COURSE
+ -------------------- -->
+    <section class="topics-section">
+      <h2>Popular topics</h2>
+
+      <div class="topics-grid">
+        <div class="topic-card">
+          <i class="fa-regular fa-lightbulb"></i>
+          <p>Artificial Intelligence</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-people-group"></i>
+          <p>Leadership</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-sitemap"></i>
+          <p>Supply Chain</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-table-cells"></i>
+          <p>Computer Programming</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-shuffle"></i>
+          <p>Probability</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-code"></i>
+          <p>Python</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-laptop"></i>
+          <p>Machine Learning</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-window-restore"></i>
+          <p>Computer Science</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <p>Writing</p>
+        </div>
+
+        <div class="topic-card">
+          <i class="fa-solid fa-chart-column"></i>
+          <p>Statistics</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------
+       HORIIZONATL CAR
+ ----------------------------- -->
+    <div class="learning-path display-none">
+      <div class="left">
+        <h2>Discover more than a classroom — join a global community.</h2>
+
+        <ul class="list-item">
+          <li>
+            Access world-class education from institutions like
+            <a style="color: blue; text-decoration: underline" href="#"
+              >Harvard</a
+            >,
+            <a style="color: blue; text-decoration: underline" href="#">MIT</a>,
+            and
+            <a style="color: blue; text-decoration: underline" href="#"
+              >Cambridge</a
+            >.
+          </li>
+          <li>
+            Learn from anywhere in the world with online courses, certificates,
+            and degrees.
+          </li>
+          <li>Connect with edX's global network of ambitious learners.</li>
+          <li>
+            Find a range of programs covering diverse topics for all types of
+            students.
+          </li>
+          <li>
+            Engage with expert-led curricula via flexible, hybrid, and 100%
+            online options.
+          </li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt=""
+        />
+      </div>
+    </div>
+
+
+
+        <div style="text-align: center; background: #00262B; color: white; padding: 50px 0;">
+      <h1>Register for a free account</h1>
+      <p style="padding-top: 10px;">Sign up now.</p>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

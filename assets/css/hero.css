@@ -1,0 +1,157 @@
+:root {
+  --edx-teal: #0b2e35;
+  --edx-orange: #d23f00;
+  --edx-blue: #0056d2;
+  --color-primary: #002b3e;
+  --color-accent: #d54400;
+  --color-border: #e3e3e3;
+  --color-text-dark: #002b3e;
+  --color-light: #ffffff;
+  --color-gray-light: #e7e7e7;
+  --color-input-border: #ccc;
+}
+
+
+.hero-section {
+  display: flex;
+  background-image: url("https://raw.githubusercontent.com/apexsoft77-lang/Edx-ip-project/refs/heads/main/assets/images/hero-bg.jfif");
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.btn-row {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: var(--edx-orange);
+  color: white;
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #b73800;
+}
+
+.btn-outline {
+  background: none;
+  color: var(--edx-orange);
+  border: 2px solid var(--edx-orange);
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: var(--edx-orange);
+  color: white;
+}
+
+/* COURSE CARDS */
+.courses {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+display: flex;
+  gap: 25px;
+}
+
+.course-card {
+  background: var(--color-primary);
+  color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.card-header {
+  height: 80px;
+  background: linear-gradient(90deg, #d54400, #0056d2, #008c45, #f4c300);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-body h3 {
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.badge {
+  background: white;
+  color: var(--color-primary);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.course-footer {
+  margin-top: 15px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Media Queries for Responsiveness */
+/* Tablet */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero {
+   text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+  }
+
+  .courses {
+    margin: auto;
+    width: 100%;
+    display: grid;
+  }
+}

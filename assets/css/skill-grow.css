@@ -1,0 +1,62 @@
+.stats-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f4f2e9;
+}
+
+.stats-section h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.stat {
+  max-width: 240px;
+}
+
+.stat h3 {
+  font-size: 48px;
+  color: #003b37;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 1px;
+  background: #ccc;
+}
+
+/* 🔥 Make it become column on screens 900px or less */
+@media(max-width: 900px) {
+  .stats-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .divider {
+    height: 1px;
+    width: 100%;
+  }
+
+  .stat {
+    max-width: 100%;
+  }
+}
+
+.explore {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 22px;
+  text-decoration: underline;
+  color: #003b37;
+}

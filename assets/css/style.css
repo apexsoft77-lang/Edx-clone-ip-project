@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* --------------------------------
+   ROOT COLOR VARIABLES
+---------------------------------- */
+:root {
+  --color-primary: #002b3e;
+  --color-accent: #d54400;
+  --color-border: #e3e3e3;
+  --color-text-dark: #002b3e;
+  --color-light: #ffffff;
+  --color-gray-light: #e7e7e7;
+  --color-input-border: #ccc;
+}
+
+/* ---------------------------
+   RESET & BASE STYLES
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* ---------------------------
+   HEADER MOBILE FIRST
+---------------------------- */
+header {
+  width: 100%;
+  background: var(--color-light);
+  border-bottom: 1px solid var(--color-border);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+    position: fixed;   /* or sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; 
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+  height: 32px;
+  cursor: pointer;
+}
+
+/* MOBILE MENU BUTTON */
+.menu-btn {
+  background: var(--color-primary);
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-btn i {
+  color: var(--color-light);
+  font-size: 18px;
+}
+
+/* MOBILE SEARCH ICON */
+.search-icon i {
+  font-size: 22px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* Desktop-only elements hidden initially */
+.desktop-learn,
+.desktop-nav,
+.search-bar {
+  display: none;
+}
+
+/* ---------------------------
+   MOBILE SLIDE MENU
+---------------------------- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 85%;
+  height: 100%;
+  background: var(--color-light);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  transition: 0.35s ease;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.close-btn {
+  font-size: 27px;
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+
+/* Mobile Sign In */
+.side-menu .sign-in {
+  color: var(--color-accent);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+/* Mobile Register */
+.side-menu .register-btn {
+  background: var(--color-accent);
+  color: var(--color-light);
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.side-menu .sign-in:hover {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.side-menu .register-btn:hover {
+  color: var(--color-accent);
+  background: transparent !important;
+  border: 1px solid var(--color-accent);
+}
+
+/* Mobile Menu Items */
+.side-menu ul {
+  list-style: none;
+}
+
+.side-menu ul li {
+  padding: 16px 0;
+  font-size: 17px;
+  border-bottom: 1px solid var(--color-gray-light);
+  color: var(--color-text-dark);
+  cursor: pointer;
+}
+
+/* ---------------------------
+   DESKTOP VIEW
+---------------------------- */
+@media (min-width: 900px) {
+  header {
+    padding: 14px 40px;
+    gap: 30px;
+  }
+
+  /* Hide mobile-only icons */
+  .menu-btn,
+  .search-icon {
+    display: none;
+  }
+
+  /* Show desktop elements */
+  .desktop-learn,
+  .desktop-nav,
+  .search-bar {
+    display: flex;
+  }
+
+  /* Learn button after logo */
+  .desktop-learn {
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: var(--color-light);
+    background: var(--color-primary);
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .desktop-learn:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .desktop-learn i {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+
+  /* Desktop Search Bar */
+  .search-bar {
+    flex: 1;
+    height: 48px;
+    display: flex;
+  }
+
+  .search-bar input {
+    flex: 1;
+    border: 1px solid var(--color-input-border);
+    border-right: none;
+    padding: 0 15px;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .search-bar button {
+    width: 60px;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+
+  .search-bar button i {
+    color: var(--color-light);
+    font-size: 18px;
+  }
+
+  /* Desktop nav items */
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color-text-dark);
+  }
+
+  .desktop-nav .register-btn {
+    background: var(--color-accent);
+    color: var(--color-light);
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+}

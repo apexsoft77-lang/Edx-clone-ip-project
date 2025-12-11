@@ -1,0 +1,40 @@
+/* PARTNER SECTION */
+.partners {
+padding: 40px 0;
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+overflow: hidden;
+background: white;
+}
+
+
+.partner-track {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 60px;
+padding: 10px 20px;
+flex-wrap: wrap;
+}
+
+
+.partner-track img {
+width:  120px;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+
+/* Mobile Horizontal Scroll */
+@media (max-width: 900px) {
+.partner-track {
+overflow-x: auto;
+flex-wrap: nowrap;
+justify-content: flex-start;
+gap: 30px;
+scrollbar-width: none;
+}
+.partner-track::-webkit-scrollbar {
+display: none;
+}
+}
