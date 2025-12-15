@@ -97,9 +97,12 @@ display: flex;
 }
 
 .card-header {
-  height: 80px;
-  background: linear-gradient(90deg, #d54400, #0056d2, #008c45, #f4c300);
+height: 80px;
+background: url(https://github.com/apexsoft77-lang/Edx-ip-project/blob/main/assets/images/course-bg.webp?raw=true);
+background-repeat: no-repeat;
+background-size: cover;
 }
+
 
 .card-body {
   padding: 20px;
