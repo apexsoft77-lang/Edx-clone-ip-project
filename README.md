@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/-html5-black?style=for-the-badge&logoColor=white&logo=html5&color=61DAFB" alt="html5" />
     <img src="https://img.shields.io/badge/-css3-black?style=for-the-badge&logoColor=white&logo=css3&color=FD366E" alt="vite" />
     <img src="https://img.shields.io/badge/-vscode-black?style=for-the-badge&logoColor=white&logo=vscode&color=blue" alt="vscode" />
-    <img src="https://img.shields.io/badge/-bootstrap-black?style=for-the-badge&logoColor=white&logo=bootstrap&color=06B6D4" alt="tailwindcss" />
+    
   </div>
   <br/>
  <h1>🌐 EDX Clone – HTML & CSS University Project</h1>
@@ -44,7 +44,6 @@ Our focus was on responsive UI, layout structure, and design quality.
 ### 🛠️ Core Technologies
 - **HTML5** – Semantic structure for all pages  
 - **CSS3** – Styling, layout, animations  
-- **bootstrap** – Modern layout system for alignment
 - **CSS Grid** – Page structure and responsiveness  
 
 ### 🎨 Design & UI Tools
